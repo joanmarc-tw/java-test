@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copy Maven wrapper & project files
-COPY backend .
+COPY . .
 
 # Build the app
 RUN ./mvnw clean package -DskipTests
